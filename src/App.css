@@ -1,0 +1,263 @@
+/* index.css or App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* leaf css */
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
+.container
+{
+  padding: 10px;
+  max-width: 90%;
+  border-radius:10px ;
+  background-color: #efefef;
+}
+/* card slider css */
+.card-container {
+  width: auto; /* Full width */    
+  margin: auto;          
+  padding: 10px;   
+  /* border:2px solid #007bff;       */
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;     
+  gap: 16px;             
+  overflow-x: auto;      
+  padding: 16px;
+  scroll-behavior: smooth; 
+  scrollbar-width: none;      
+  -ms-overflow-style: none;   
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;              
+}
+
+.container-card {
+  min-width: 200px; /* Minimum width of the card */
+  background-color: #fff;
+  /* /* border: 1px solid #ddd; */
+  border-radius: 8px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  flex: 0 0 auto;         
+  position: relative;
+}
+
+/* Label at the top of the card */
+.card-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Card hover effect */
+.container-card:hover {
+  border: 2px solid #0d6efd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.img-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.parent-container {
+  max-width: 88%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+@media (min-width: 768px) {
+  .parent-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.left-child, .right-child {
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff; /* Pure white background */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
+  word-break: break-word; /* Prevents overflow */
+  word-wrap: break-word; /* Prevents overflow */
+  overflow-wrap: break-word; /* Prevents overflow */
+  line-height: 1.5; /* Improves readability */
+  max-width: 100%; /* Prevents overflow */
+  flex: 1; /* Allows the child to grow and fill the space */
+  min-width: 300px; /* Minimum width for smaller screens */
+  max-width: 600px; /* Maximum width for larger screens */
+  height: 500px; /* Allows the child to grow and fill the space */
+  min-height: auto;
+  text-align: center; /* Center text */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  
+
+}
+/* mission and vision */
+.mission-visin:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  transform: scale(1.01); /* Slightly enlarge on hover */
+}
+.description.goal-description
+{
+  word-break: break-word; /* Prevents overflow */
+  word-wrap: break-word; /* Prevents overflow */
+  overflow-wrap: break-word; /* Prevents overflow */
+  line-height: 1.5; /* Improves readability */
+  text-align: center; /* Center text */
+
+}
+
+
+/* Latest css */
+.latest-container{
+
+ background-color: #efefef; /* Pure white background */
+ 
+}
+.active {
+  background-color: rgb(59, 59, 172);
+  color: white;
+}
+
+
+/* Event card css */
+/* card slider css */
+.event-container {
+  width: 90%;  
+  margin: auto;        
+  overflow-x: auto;      
+  display: flex;
+  flex-wrap: nowrap;     
+  gap: 16px;  /* space between cards */
+  scroll-behavior: smooth;
+  scrollbar-width: none;  
+  -ms-overflow-style: none; 
+  padding: 16px;
+}
+
+.event-container::-webkit-scrollbar {
+  display: none;              
+}
+
+.event-card {
+  flex: 0 0 400px;  /* 🎯 Fix width to 250px */
+  border-radius: 8px; 
+  cursor: pointer;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  padding: 12px;
+  text-align: center;
+  /* background: white; */
+}
+.event-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.event-description {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  word-break: break-word;
+  text-align: center;
+}
+/* Footer css */
+.footer-sub-container {
+  width: 100%;
+  margin-top: 1px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+   /* Pure white background */
+  border-radius: 8px; /* Optional: for rounded corners */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); Optional: for a subtle shadow */
+}
+
+.hover-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  padding: 10px;
+  /* background-color: #fff; */
+  color: #333;
+  border-color: #efefef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-size: 14px;
+  justify-content: center;
+}
+/* About.jsx css */
+.bg-image
+{
+  filter: brightness(0.4) ;  
+}
+/*TouristPlaces css */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* SliderVideo.css */
+
+.video-container {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* z-index: -1; Pushes the video behind other content */
+}
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the container nicely */
+  display: block; /* Prevents any whitespace under the video */
+}
